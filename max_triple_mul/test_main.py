@@ -23,6 +23,14 @@ class TestMaxTripleProd(TestCase):
         result = max_triple_mul([1, 2, 0])
         self.assertEqual(result, 0)
 
+    def test_with_negative(self):
+        """ list contains positive, negative and zero values """
+        inp = [5, 6, 7, -100, -10, 0]
+        result = max_triple_mul(inp)
+
+        self.assertEqual(result, 7000)
+        self.assertNotEqual(result, 210)
+
     def test_many_positive(self):
         """ different test with positive and negative """
 
