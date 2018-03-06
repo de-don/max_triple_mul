@@ -1,5 +1,6 @@
 from unittest import TestCase
-from .main import max_triple_mul, ListSmallSize
+
+from .main import ListSmallSize, max_triple_mul
 
 
 class TestMaxTripleProd(TestCase):

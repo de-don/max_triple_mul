@@ -1,5 +1,5 @@
-from bisect import bisect_left
 import operator
+from bisect import bisect_left
 from functools import reduce
 
 
